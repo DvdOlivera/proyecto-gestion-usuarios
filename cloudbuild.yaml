@@ -1,0 +1,4 @@
+steps:
+  - name: 'gcr.io/cloud-builders/mvn'
+    entrypoint: 'gcloud'
+    timeout: 3600s
