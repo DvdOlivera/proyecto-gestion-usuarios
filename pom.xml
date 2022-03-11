@@ -72,7 +72,17 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 
 			</plugin>
-
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>3.0.4</version>
+				<configuration>
+					<appName>${heroku.appName}</appName>
+					<processTypes>
+						<web>java $JAVA_OPTS -cp target/classes:target/* com.proyecto.proyecto.ProyectoApplication</web>
+					</processTypes>
+				</configuration>
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
