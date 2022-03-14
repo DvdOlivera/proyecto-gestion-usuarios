@@ -87,7 +87,7 @@
 								<artifactItem>
 									<groupId>com.github.DvdOlivera</groupId>
 									<artifactId>proyecto-gestion-usuarios</artifactId>
-
+									<version>1.0</version>
 									<destFileName>proyecto-0.0.1-SNAPSHOT.jar</destFileName>
 								</artifactItem>
 							</artifactItems>
