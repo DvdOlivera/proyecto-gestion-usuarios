@@ -78,31 +78,53 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>3.2.0</version>
-				<!--<executions>
+				<executions>
 					<execution>
-						<id>copy</id>
 						<phase>package</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
+						<goals><goal>copy</goal></goals>
 						<configuration>
 							<artifactItems>
 								<artifactItem>
-									<groupId>[ groupId ]</groupId>
-									<artifactId>[ artifactId ]</artifactId>
-									<version>[ version ]</version>
-									<type>[ packaging ]</type>
-									<classifier> [classifier - optional] </classifier>
-									<overWrite>[ true or false ]</overWrite>
-									<outputDirectory>[ output directory ]</outputDirectory>
-									<destFileName>[ filename ]</destFileName>
+									<groupId>com.github.DvdOlivera</groupId>
+									<artifactId>proyecto-gestion-usuarios</artifactId>
+
+									<destFileName>proyecto-0.0.1-SNAPSHOT.jar</destFileName>
 								</artifactItem>
 							</artifactItems>
-
 						</configuration>
 					</execution>
-				</executions>-->
+				</executions>
 			</plugin>
+
+		<!--<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.2.0</version>
+            <executions>
+                <execution>
+                    <id>copy</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>copy</goal>
+                    </goals>
+                    <configuration>
+                        <artifactItems>
+                            <artifactItem>
+                                <groupId>[ groupId ]</groupId>
+                                <artifactId>[ artifactId ]</artifactId>
+                                <version>[ version ]</version>
+                                <type>[ packaging ]</type>
+                                <classifier> [classifier - optional] </classifier>
+                                <overWrite>[ true or false ]</overWrite>
+                                <outputDirectory>[ output directory ]</outputDirectory>
+                                <destFileName>[ filename ]</destFileName>
+                            </artifactItem>
+                        </artifactItems>
+
+                    </configuration>
+                </execution>
+            </executions>
+			</plugin>-->
 		</plugins>
 	</build>
 
